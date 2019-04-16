@@ -12,11 +12,16 @@ public class HelloWordController {
 
 //	@RequestMapping(method = RequestMethod.GET, path = "/")
 	
+//	@GetMapping
+//	public ModelAndView index(Model model) {
+//		ModelAndView mv = new ModelAndView("/helloword");
+//		
+//		return mv;
+//	}
+	
 	@GetMapping
-	public ModelAndView index(Model model) {
-		ModelAndView mv = new ModelAndView("/helloword");
-		
-		return mv;
+	public String index(Model model) {
+		return "helloword";
 	}
 	
 }
